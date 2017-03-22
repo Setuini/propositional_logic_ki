@@ -1,5 +1,9 @@
-/**
- * Created by setuini on 22/03/2017.
- */
+
 public class Iff {
+
+    public Iff(){}
+
+    public static Variable of(Variable a, Variable b){
+        return Not.of(Xor.of(a,b));
+    }
 }

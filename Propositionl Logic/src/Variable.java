@@ -5,8 +5,8 @@ public class Variable {
     private Boolean value;
 
     public Variable(Character name, boolean value){
-        this.value = value;
         this.name = name;
+        this.value = value;
     }
 
     //Getter and Setter
