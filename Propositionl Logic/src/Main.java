@@ -42,6 +42,15 @@ public class Main {
         System.out.println("\na iff b");
         System.out.println( Iff.of(a,b).getValue() );
 
+        // Example from the PDF
+        Variable p = new Variable('a',true);
+        Variable q = new Variable('b',false);
+
+        // (not p imp q) iff (p or q)
+        System.out.println("\n(not p imp q) iff (p or q)");
+        System.out.println(Iff.of( Imp.of(Not.of(p),q) , Or.of(p,q)).getValue());
+
+
 
 
 
