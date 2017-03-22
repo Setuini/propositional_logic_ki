@@ -1,7 +1,10 @@
 
 public class Not{
 
-    public Boolean eval(Boolean l) {
-        return !l;
+    public AtomicFormula eval(AtomicFormula af) {
+        Boolean currentValue = af.getValue();
+        return new AtomicFormula(!currentValue);
     }
+
+
 }
